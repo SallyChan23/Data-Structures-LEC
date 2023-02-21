@@ -47,6 +47,7 @@ void pushHead(char nama[], int umur){
 // 3. connect
 
 int main(){
+    printf("Hello World");
     pushHead("Andi", 25);
     pushHead("Budi", 18);
     pushHead("Charlie", 15);
