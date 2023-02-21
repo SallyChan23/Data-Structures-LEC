@@ -16,6 +16,6 @@ struct tnode *node = (struct tnode*) malloc (sizeof(struct tnode));
 // 2. push tail (di belakang)
 // 3. push middle (selipin di tengah)
 int main(){
-
+    
     return 0;
 }
