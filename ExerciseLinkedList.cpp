@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 struct data{
-    char nama[50];
+    char nama[60];
     int umur;
     struct data *next;
 }*head = NULL, *tail = NULL;
