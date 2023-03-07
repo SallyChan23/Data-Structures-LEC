@@ -36,4 +36,44 @@ QUEUE:
 Circular Queue -> yang bisa berputar bali lagi ke index awal (kalau misal ga ada data).
                   kalau ada data, berarti angka nya ilang.
 
+Hash Table:
+Define -> 3 karena D itu kan huruf ke 4, dan index secara manusia diitung dari 1
+          jadi 4-1 = 3
 
+0-25 hash table, dengan linear probing dan chaining (menggunakkan huruf pertama)
+1. andi 
+2. budi 
+3. tono 
+4. indah
+5. cherry
+6. bella
+7. alfa 
+8. hendi 
+9. fiona 
+10. annie
+
+Chaining
+0 andi -> alfa -> annie
+1 budi -> bella
+
+Linear probing
+0 andi
+1 budi
+2 cherry
+3 bella
+4 alfa
+5 fiona
+6 annie
+7 hendi
+8 indah
+9 NULL
+10 NULL
+11 NULL
+12 NULL
+13 NULL
+14 NULL
+15 NULL
+16 NULL
+17 NULL
+18 NULL
+19 Tono
