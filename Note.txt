@@ -1,0 +1,39 @@
+Postfix:
+5 5 5 * 10 5 - / + 10 + 
+5 push(5)										    5
+5 5 push (5)										5 5
+5 5 5 push(5)										5 5 5
+5 5 5 * pop(25), push(5), push(5 * 5)				5 25
+5 5 5 * 10 pop(5)									5 25 10
+5 5 5 * 10 5 push(5)								5 25 10 5
+5 5 5 * 10 5 - pop(5), pop(10), push(10 - 5)		5 25 5
+5 5 5 * 10 5 - /  pop(25), pop(-5), push(25 / -5) 	5 5
+5 5 5 * 10 5 - / + push(5 + 5)						10
+5 5 5 * 10 5 - / + 10 push(10) pop(10) push(10+10)	10 10
+5 5 5 * 10 5 - / + 10 + push(20)					20
+
+Infix ke Postfix
+1. Scan Left ke Right
+2. Operand -> Postfix string
+3. Open bracket -> stack
+4. Open Bracket -> pop tail open bracket 
+                   add to postfix string
+5. Operator (loop)
+    top Operator precendance -> pop -> add postfix string
+    Stop -> stack
+6. End of string -> pop all stack -> add to postfix string
+
+
+Postfix Evaluation:
+1. Scan left to Right
+2. Operand stack
+3. Operator -> pop twice A B 
+    push B operator A
+
+
+QUEUE:
+
+Circular Queue -> yang bisa berputar bali lagi ke index awal (kalau misal ga ada data).
+                  kalau ada data, berarti angka nya ilang.
+
+
